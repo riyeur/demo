@@ -11,5 +11,4 @@ COPY gradle ./gradle
 #Copy all files in the project into the container image
 COPY . .
 
-
 RUN chmod +x ./gradlew
