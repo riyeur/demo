@@ -1,0 +1,10 @@
+name: ENSF 400 Final Project (Group 28)
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
