@@ -22,5 +22,15 @@ jobs:
               username: ${{ secrets.DOCKER_USERNAME }}
               password: ${{ secrets.DOCKER_PASSWORD }}
 
+          - name: ENSF 400 Final Project
+            uses: docker/build-push-action@v3
+            with:
+              context: .
+              push: true
+              tags: |
+                hooriyakhn/ensf400_group28_finalproject:${{ env.GIT_TAG }}
+                hooriyakhn/ensf400_group28_finalproject:${{ github.ref_name }}
+
+
           
 
